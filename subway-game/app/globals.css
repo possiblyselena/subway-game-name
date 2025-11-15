@@ -22,5 +22,26 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
+  background-image: url("/assets/dog.png");
+  background-size: cover;
+}
+
+.subway-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #0039a6;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.circle-row {
+  display: flex;
+  gap: 0.1px;
 }

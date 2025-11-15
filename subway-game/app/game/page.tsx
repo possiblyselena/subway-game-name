@@ -14,13 +14,17 @@
 // // Inline styles
 // <div style={{ color: 'red', fontSize: '16px' }}>
 
-import Background from '/assets/window.png'
 export default function Game(){
 
   return (
-    <div>hi</div>
+    <div 
+      className="w-screen h-screen bg-cover bg-center"
+      style={{ backgroundImage: 'url(/assets/Hi.png)' }}
+    >
+      { 
+        
+      }
+    </div>
   )
 
 }
-
-

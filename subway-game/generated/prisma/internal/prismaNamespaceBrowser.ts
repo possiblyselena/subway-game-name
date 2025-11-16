@@ -17,8 +17,8 @@
 
 import * as runtime from "@prisma/client/runtime/index-browser"
 
-export type * from '../models.ts'
-export type * from './prismaNamespace.ts'
+export type * from '../models'
+export type * from './prismaNamespace'
 
 export const Decimal = runtime.Decimal
 
@@ -49,7 +49,7 @@ export const AnyNull = runtime.objectEnumValues.instances.AnyNull
 
 
 export const ModelName = {
-  userInfo: 'userInfo'
+  Room: 'Room'
 } as const
 
 export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -68,12 +68,44 @@ export const TransactionIsolationLevel = runtime.makeStrictEnum({
 export type TransactionIsolationLevel = (typeof TransactionIsolationLevel)[keyof typeof TransactionIsolationLevel]
 
 
-export const UserInfoScalarFieldEnum = {
+export const RoomScalarFieldEnum = {
   id: 'id',
-  playerNumber: 'playerNumber'
+  hasuser1: 'hasuser1',
+  hasuser2: 'hasuser2',
+  hasuser3: 'hasuser3',
+  user1task: 'user1task',
+  user2task: 'user2task',
+  user3task: 'user3task',
+  user1done: 'user1done',
+  user2done: 'user2done',
+  user3done: 'user3done',
+  w1: 'w1',
+  w2: 'w2',
+  w3: 'w3',
+  w4: 'w4',
+  w5: 'w5',
+  w6: 'w6',
+  w7: 'w7',
+  w8: 'w8',
+  w9: 'w9',
+  w10: 'w10',
+  w11: 'w11',
+  w12: 'w12',
+  c1: 'c1',
+  c2: 'c2',
+  c3: 'c3',
+  c4: 'c4',
+  c5: 'c5',
+  c6: 'c6',
+  c7: 'c7',
+  c8: 'c8',
+  c9: 'c9',
+  c10: 'c10',
+  c11: 'c11',
+  c12: 'c12'
 } as const
 
-export type UserInfoScalarFieldEnum = (typeof UserInfoScalarFieldEnum)[keyof typeof UserInfoScalarFieldEnum]
+export type RoomScalarFieldEnum = (typeof RoomScalarFieldEnum)[keyof typeof RoomScalarFieldEnum]
 
 
 export const SortOrder = {
@@ -82,4 +114,12 @@ export const SortOrder = {
 } as const
 
 export type SortOrder = (typeof SortOrder)[keyof typeof SortOrder]
+
+
+export const QueryMode = {
+  default: 'default',
+  insensitive: 'insensitive'
+} as const
+
+export type QueryMode = (typeof QueryMode)[keyof typeof QueryMode]
 

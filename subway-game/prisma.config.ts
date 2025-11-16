@@ -1,4 +1,4 @@
-import "dotenv/config"
+import "dotenv/config";
 import { defineConfig, env } from "prisma/config";
 
 export default defineConfig({
@@ -8,6 +8,6 @@ export default defineConfig({
   },
   engine: "classic",
   datasource: {
-    url: env("postgresql://neondb_owner:npg_i4TIDBCqxP3Y@ep-spring-forest-addod12h-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"),
+    url: env("DATABASE_URL"),
   },
 });

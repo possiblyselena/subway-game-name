@@ -11,10 +11,51 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("postgresql://neondb_owner:npg_i4TIDBCqxP3Y@ep-spring-forest-addod12h-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require")
+  url      = env("DATABASE_URL")
 }
 
-model userInfo{
-  id Int @id @default(autoincrement())
-  playerNumber Int @unique //player wil be assigned either 1 or 2
+model Room {
+  id String @id @default(cuid())
+
+  hasuser1 Boolean
+  hasuser2 Boolean
+  hasuser3 Boolean
+
+  user1task String
+  user2task String
+  user3task String
+
+  user1done Boolean
+  user2done Boolean
+  user3done Boolean
+
+  w1 String @default("")
+  w2 String @default("")
+  w3 String @default("")
+  w4 String @default("")
+  
+  w5 String @default("")
+  w6 String @default("")
+  w7 String @default("")
+  w8 String @default("")
+
+  w9 String @default("")
+  w10 String @default("")
+  w11 String @default("")
+  w12 String @default("")
+
+  c1 String @default("")
+  c2 String @default("")
+  c3 String @default("")
+  c4 String @default("")
+  
+  c5 String @default("")
+  c6 String @default("")
+  c7 String @default("")
+  c8 String @default("")
+
+  c9 String @default("")
+  c10 String @default("")
+  c11 String @default("")
+  c12 String @default("")
 }

@@ -23,7 +23,7 @@ const config: runtime.GetPrismaClientConfig = {
       "value": "prisma-client"
     },
     "output": {
-      "value": "/Users/stephaniexia/Documents/subway-game-name/subway-game/generated/prisma",
+      "value": "C:\\Users\\neena\\subway-game-name\\subway-game\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -32,12 +32,12 @@ const config: runtime.GetPrismaClientConfig = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "darwin-arm64",
+        "value": "windows",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/Users/stephaniexia/Documents/subway-game-name/subway-game/prisma/schema.prisma",
+    "sourceFilePath": "C:\\Users\\neena\\subway-game-name\\subway-game\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativePath": "../../prisma",

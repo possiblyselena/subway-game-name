@@ -39,7 +39,7 @@ export default function Home() {
           height={150}
         />
 
-        <Link href="/join" className="mx-auto">
+        <Link href="/readyup" className="mx-auto">
           <Image
             src="/assets/joingame.png"
             alt="Join Game"

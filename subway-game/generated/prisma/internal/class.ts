@@ -34,6 +34,10 @@ const config: runtime.GetPrismaClientConfig = {
         "fromEnvVar": null,
         "value": "windows",
         "native": true
+      },
+      {
+        "fromEnvVar": null,
+        "value": "rhel-openssl-3.0.x"
       }
     ],
     "previewFeatures": [],
@@ -56,8 +60,8 @@ const config: runtime.GetPrismaClientConfig = {
       }
     }
   },
-  "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider = \"prisma-client\"\n  output   = \"../generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel Room {\n  id String @id @default(cuid())\n\n  hasuser1 Boolean\n  hasuser2 Boolean\n  hasuser3 Boolean\n\n  user1task String\n  user2task String\n  user3task String\n\n  user1done Boolean\n  user2done Boolean\n  user3done Boolean\n\n  w1 String @default(\"\")\n  w2 String @default(\"\")\n  w3 String @default(\"\")\n  w4 String @default(\"\")\n\n  w5 String @default(\"\")\n  w6 String @default(\"\")\n  w7 String @default(\"\")\n  w8 String @default(\"\")\n\n  w9  String @default(\"\")\n  w10 String @default(\"\")\n  w11 String @default(\"\")\n  w12 String @default(\"\")\n\n  c1 String @default(\"\")\n  c2 String @default(\"\")\n  c3 String @default(\"\")\n  c4 String @default(\"\")\n\n  c5 String @default(\"\")\n  c6 String @default(\"\")\n  c7 String @default(\"\")\n  c8 String @default(\"\")\n\n  c9  String @default(\"\")\n  c10 String @default(\"\")\n  c11 String @default(\"\")\n  c12 String @default(\"\")\n}\n",
-  "inlineSchemaHash": "0ea24957485825a754ab7af5e5b68ab47706c9794d18fd53fa1b2ea82bc1f3d0",
+  "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider      = \"prisma-client\"\n  output        = \"../generated/prisma\"\n  binaryTargets = [\"native\", \"rhel-openssl-3.0.x\"]\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel Room {\n  id String @id @default(cuid())\n\n  hasuser1 Boolean\n  hasuser2 Boolean\n  hasuser3 Boolean\n\n  user1task String\n  user2task String\n  user3task String\n\n  user1done Boolean\n  user2done Boolean\n  user3done Boolean\n\n  w1 String @default(\"\")\n  w2 String @default(\"\")\n  w3 String @default(\"\")\n  w4 String @default(\"\")\n\n  w5 String @default(\"\")\n  w6 String @default(\"\")\n  w7 String @default(\"\")\n  w8 String @default(\"\")\n\n  w9  String @default(\"\")\n  w10 String @default(\"\")\n  w11 String @default(\"\")\n  w12 String @default(\"\")\n\n  c1 String @default(\"\")\n  c2 String @default(\"\")\n  c3 String @default(\"\")\n  c4 String @default(\"\")\n\n  c5 String @default(\"\")\n  c6 String @default(\"\")\n  c7 String @default(\"\")\n  c8 String @default(\"\")\n\n  c9  String @default(\"\")\n  c10 String @default(\"\")\n  c11 String @default(\"\")\n  c12 String @default(\"\")\n}\n",
+  "inlineSchemaHash": "7a5196c247d3b7447c1fa791d22d1ecab41c5d4a22aa81a1514eda83f7caa23f",
   "copyEngine": true,
   "runtimeDataModel": {
     "models": {},

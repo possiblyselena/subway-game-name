@@ -46,7 +46,7 @@ export default function P1() {
         style={{ objectFit: 'cover', zIndex: -1 }}
       />
       
-      <h1>Level 2 - P1</h1>
+      <h1>P3 - Figure out your path!</h1>
       <div className="grid grid-cols-2">
         <div className="grid grid-cols-6">
           {selected.map((isSelected, i) => (

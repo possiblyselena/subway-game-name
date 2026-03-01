@@ -19,6 +19,14 @@ export default function ReadyUp() {
     }
   }
 
+  function cardClass(id: number) {
+    const base = "cursor-pointer transition-transform duration-200";
+    const selected = player === id ? "scale-120 -translate-y-1" : "";
+    const hover = player === id ? "hover:scale-110 hover:-translate-y-2" : "";
+    return `${base} ${selected} ${hover}`;
+  }
+
+
   return (
     <div className="flex flex-col items-center gap-8 bg-[url('/assets/image.png')] bg-cover min-h-screen p-4">
       <div className="flex justify-center gap-4">
@@ -39,7 +47,7 @@ export default function ReadyUp() {
             alt="P1 metrocard off"
             width={300}
             height={75}
-            className="cursor-pointer"
+            className={cardClass(1)}
           />
           <Image
            onClick={() => setPlayer(2)}
@@ -47,7 +55,7 @@ export default function ReadyUp() {
             alt="P2 metrocard off"
             width={300}
             height={75}
-            className="cursor-pointer"
+            className={cardClass(2)}
           />
           <Image
             onClick={() => setPlayer(3)}
@@ -55,7 +63,7 @@ export default function ReadyUp() {
             alt="P3 metrocard off"
             width={300}
             height={75}
-            className="cursor-pointer"
+            className={cardClass(3)}
           />
       </div>
 
